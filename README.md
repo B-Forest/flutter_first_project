@@ -1,16 +1,26 @@
-# first_flutter_project
+FOREST Benjamin
 
-A new Flutter project.
+git clone https://github.com/ton-compte/omdb_flutter_movies.git
+cd omdb_flutter_movies
 
-## Getting Started
+flutter pub get
 
-This project is a starting point for a Flutter application.
+Créez un compte gratuit sur OMDb API , récupérez votre clé et ajoutez-la dans :
+// lib/services/omdb_service.dart
+final String apiKey = "VOTRE_API_KEY";
 
-A few resources to get you started if this is your first Flutter project:
+flutter run
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Entrez un mot-clé dans la barre de recherche (ex: Batman, Spiderman, Inception).
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Appuyez sur 🔍 pour lancer la recherche.
+
+Les films correspondants s’affichent dans une liste avec :
+
+L’affiche (si disponible)
+
+Le titre
+
+L’année de sortie
+
+Cliquez sur l’icône de tri (⚙️ en haut à droite) pour changer l’ordre des résultats (du plus récent au plus ancien ou l’inverse).
